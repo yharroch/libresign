@@ -8,21 +8,62 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/LibreSign/libresign)](https://api.reuse.software/info/github.com/LibreSign/libresign)
 [![Start contributing](https://img.shields.io/github/issues/LibreSign/libresign/good%20first%20issue?color=7057ff&label=Contribute)](https://github.com/LibreSign/libresign/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22)
 
-Nextcloud app to sign PDF documents.
+# LibreSign for Nextcloud
 
-<img src="img/LibreSign.png" />
+LibreSign is a digital signature application for Nextcloud that enables secure document signing workflows directly within your self-hosted environment.
 
-[![Request a feature](https://img.shields.io/badge/Request%20a%20feature-7057ff?style=for-the-badge)](https://github.com/LibreSign/libresign/issues/new?template=feature_request.yml)
-[![Report a BUG](https://img.shields.io/badge/Report%20a%20bug-8e0000?style=for-the-badge)](https://github.com/LibreSign/libresign/issues/new?template=bug_report.yml)
+It supports internal and external signers, certificate-based signatures, and full document lifecycle management.
 
-## Star History
+## Quick Links
 
-[![Star History Chart](https://api.star-history.com/svg?repos=libresign/libresign&type=Date)](https://www.star-history.com/#libresign/libresign&Date)
+- 📦 Install from Nextcloud App Store
+- 📖 Full Documentation: https://github.com/LibreSign/documentation
+- 🐛 Report a bug
+- 💡 Request a feature
+- 🌍 Translations (Transifex)
+  
+## Who is this for?
 
-## Contributing
+- 🛠 Nextcloud administrators who want to deploy a digital signature solution
+- 👤 End users who need to sign or request signatures on documents
+- 🏢 Organizations looking for a self-hosted signature workflow
 
-There are many ways to contribute, including writing code, filing issues on GitHub, helping people Overflow, helping to triage, reproduce, or fix bugs that people have filed, adding to our documentation.
-To get more details go to our [contributing guide](CONTRIBUTING.md).
+## Documentation
+
+Complete guides are available for:
+
+- 🔧 Administrators (installation, configuration, certificates)
+- 👥 Users (how to request and sign documents)
+- 🧪 Developers (architecture and API)
+
+👉 https://github.com/LibreSign/documentation
+
+## Installation
+
+LibreSign can be installed:
+
+- From the Nextcloud App Store
+- Manually from the release package
+- From source (for development environments)
+
+⚠️ Detailed installation instructions (including dependencies, certificate configuration and troubleshooting) are available here: https://github.com/LibreSign/documentation
+
+## Requirements
+
+- Supported Nextcloud versions: XX – XX
+- PHP: The PHP version must match the minimum required by the current Nextcloud master branch. At the time of writing this documentation, the minimum required version is 8.1.
+- Node.js : The Node.js version must match the engine required by the current Nextcloud master branch. At the time of writing this documentation, the required version is ^22.0.0 (with npm ^10.5.0).
+- Additional dependencies
+	- poppler-utils
+	- System locale configured with UTF-8 charset
+
+## How it works
+
+1. A user uploads a document.
+2. The user defines signers (internal or external).
+3. Signers receive a notification or link.
+4. The document is signed and stored in Nextcloud.
+5. Signature validation and certificate verification are performed automatically.
 
 ## Integrations
 
@@ -31,7 +72,37 @@ To get more details go to our [contributing guide](CONTRIBUTING.md).
 
 ## API Documentation
 
-[API Documentation](https://libresign.github.io/)
+- 🌐 Public API reference: https://libresign.github.io/
+- 📘 Developer manual: https://docs.libresign.coop/developer_manual/index.html
+
+## Security
+
+LibreSign uses certificate-based digital signatures and follows best practices for secure document validation.
+
+For security reports, please contact: security@libresign.coop
+
+## Contributing
+
+We welcome contributions!
+
+- Bug reports and feature requests: Issues tab
+- Code contributions: Pull Requests
+- Translations: Transifex https://app.transifex.com/nextcloud/nextcloud/libresign
+- Documentation improvements: https://github.com/LibreSign/documentation
+- To get more details go to our [contributing guide](CONTRIBUTING.md).
+
+[![Request a feature](https://img.shields.io/badge/Request%20a%20feature-7057ff?style=for-the-badge)](https://github.com/LibreSign/libresign/issues/new?template=feature_request.yml)
+[![Report a BUG](https://img.shields.io/badge/Report%20a%20bug-8e0000?style=for-the-badge)](https://github.com/LibreSign/libresign/issues/new?template=bug_report.yml)
+
+## Screenshots
+
+<p align="center">
+  <img src="img/LibreSign.png" alt="LibreSign interface screenshot" width="900"/>
+</p>
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=libresign/libresign&type=Date)](https://www.star-history.com/#libresign/libresign&Date)
 
 ## Contributors ✨
 
@@ -40,3 +111,17 @@ Thanks go to these wonderful people:
 <a href="https://github.com/LibreSign/libresign/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=LibreSign/libresign" />
 </a>
+
+## Why LibreSign?
+
+- Fully self-hosted digital signature solution
+- Integrated with Nextcloud ecosystem
+- Supports internal and external signers
+- Open source (AGPL-3.0)
+- Extensible API
+
+## License
+
+LibreSign is licensed under the **GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)**.
+The documentation repository has its own license file:
+- 📄 https://github.com/LibreSign/documentation/blob/main/LICENSE
